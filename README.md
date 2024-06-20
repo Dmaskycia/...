@@ -65,7 +65,7 @@
 
             <div class="contact-delegates">
                 <p><strong>Contacto:</strong> Se han identificado factores de riesgo de estrés térmico. Por favor, ponte en contacto con delegado/a.</p>
-                <button type="button" onclick="showSymptomSection()">Es importante, continua la encuesta</button>
+                <button type="button" onclick="showSymptomSection()">Tienes alguno de estos sintomas</button>
             </div>
 
             <div class="symptom-section">
