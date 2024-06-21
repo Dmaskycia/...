@@ -54,7 +54,7 @@
 </head>
 <body>
     <div id="page1" class="content">
-        <h1>CCOO Medidor de Factores de Estrés Térmico</h1>
+        <h1>CCOO medidor de Factores de Estrés Térmico</h1>
         <form id="surveyForm1">
             <label for="highTemp">¿Consideras que la temperatura en tu área de trabajo es alta?</label><br>
             <input type="radio" id="highTempYes" name="highTemp" value="sí" required>
@@ -88,7 +88,7 @@
     </div>
 
     <div id="page2" class="content" style="display: none;">
-        <h1>Encuesta de Síntomas de Shock Térmico</h1>
+        <h1>Medidor de Síntomas de Shock Térmico</h1>
         <form id="surveyForm2">
             <label for="dizziness">¿Sientes mareos o vértigo frecuentemente en el trabajo?</label><br>
             <input type="radio" id="dizzinessYes" name="dizziness" value="sí" required>
