@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCOO Encuesta de Factores y Síntomas de Estrés Térmico</title>
+    <title>CCOO Medidor de Factores y Síntomas de Estrés Térmico</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -54,7 +54,7 @@
 </head>
 <body>
     <div id="page1" class="content">
-        <h1>CCOO Encuesta de Factores de Estrés Térmico</h1>
+        <h1>CCOO Medidor de Factores de Estrés Térmico</h1>
         <form id="surveyForm1">
             <label for="highTemp">¿Consideras que la temperatura en tu área de trabajo es alta?</label><br>
             <input type="radio" id="highTempYes" name="highTemp" value="sí" required>
