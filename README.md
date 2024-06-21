@@ -176,7 +176,7 @@
                 messageDiv.style.display = "block";
                 setTimeout(() => {
                     showInstructions();
-                }, 6000);
+                }, 4500);
             } else {
                 displayResult(false, 2);
             }
