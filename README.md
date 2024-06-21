@@ -12,16 +12,18 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .content {
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 10px;
-            width: 80%;
+            width: 100%;
             max-width: 600px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: relative;
@@ -46,6 +48,7 @@
             max-width: 500px;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
         }
     </style>
 </head>
@@ -81,41 +84,41 @@
         </form>
 
         <div id="result1" class="result"></div>
-        <div id="message1" class="message"></div>
+        <div id="message1" class="message" onclick="showPage2()"></div>
     </div>
 
     <div id="page2" class="content" style="display: none;">
         <h1>Encuesta de Síntomas de Shock Térmico</h1>
         <form id="surveyForm2">
             <label for="dizziness">¿Sientes mareos o vértigo frecuentemente en el trabajo?</label><br>
-            <input type="radio" id="dizzinessYes" name="dizziness" value="sí">
+            <input type="radio" id="dizzinessYes" name="dizziness" value="sí" required>
             <label for="dizzinessYes">Sí</label><br>
-            <input type="radio" id="dizzinessNo" name="dizziness" value="no">
+            <input type="radio" id="dizzinessNo" name="dizziness" value="no" required>
             <label for="dizzinessNo">No</label><br><br>
 
             <label for="fatigue">¿Sientes fatiga extrema o cansancio más allá de lo normal?</label><br>
-            <input type="radio" id="fatigueYes" name="fatigue" value="sí">
+            <input type="radio" id="fatigueYes" name="fatigue" value="sí" required>
             <label for="fatigueYes">Sí</label><br>
-            <input type="radio" id="fatigueNo" name="fatigue" value="no">
+            <input type="radio" id="fatigueNo" name="fatigue" value="no" required>
             <label for="fatigueNo">No</label><br><br>
 
             <label for="excessiveSweating">¿Sudas en exceso mientras trabajas, incluso sin realizar esfuerzo físico significativo?</label><br>
-            <input type="radio" id="excessiveSweatingYes" name="excessiveSweating" value="sí">
+            <input type="radio" id="excessiveSweatingYes" name="excessiveSweating" value="sí" required>
             <label for="excessiveSweatingYes">Sí</label><br>
-            <input type="radio" id="excessiveSweatingNo" name="excessiveSweating" value="no">
+            <input type="radio" id="excessiveSweatingNo" name="excessiveSweating" value="no" required>
             <label for="excessiveSweatingNo">No</label><br><br>
 
             <label for="nausea">¿Has experimentado náuseas o vómitos mientras trabajas?</label><br>
-            <input type="radio" id="nauseaYes" name="nausea" value="sí">
+            <input type="radio" id="nauseaYes" name="nausea" value="sí" required>
             <label for="nauseaYes">Sí</label><br>
-            <input type="radio" id="nauseaNo" name="nausea" value="no">
+            <input type="radio" id="nauseaNo" name="nausea" value="no" required>
             <label for="nauseaNo">No</label><br><br>
 
             <button type="button" onclick="calculateStress()">Enviar</button>
         </form>
 
         <div id="result2" class="result"></div>
-        <div id="message2" class="message"></div>
+        <div id="message2" class="message" onclick="showInstructions()"></div>
     </div>
 
     <div id="instructions" class="content" style="display: none;">
@@ -155,13 +158,14 @@
         function showPage2() {
             document.getElementById('page1').style.display = 'none';
             document.getElementById('page2').style.display = 'block';
+            document.getElementById('message1').style.display = 'none';
         }
 
         function calculateStress() {
             var dizziness = document.querySelector('input[name="dizziness"]:checked').value;
             var fatigue = document.querySelector('input[name="fatigue"]:checked').value;
             var excessiveSweating = document.querySelector('input[name="excessiveSweating"]:checked').value;
-            var nausea = document.querynausea = document.querySelector('input[name="nausea"]:checked').value;
+            var nausea = document.querySelector('input[name="nausea"]:checked').value;
 
             var symptoms = [dizziness, fatigue, excessiveSweating, nausea];
             var symptomCount = symptoms.filter(symptom => symptom === 'sí').length;
@@ -172,7 +176,7 @@
                 messageDiv.style.display = "block";
                 setTimeout(() => {
                     showInstructions();
-                }, 3000);
+                }, 6000);
             } else {
                 displayResult(false, 2);
             }
@@ -181,6 +185,7 @@
         function showInstructions() {
             document.getElementById('page2').style.display = 'none';
             document.getElementById('instructions').style.display = 'block';
+            document.getElementById('message2').style.display = 'none';
         }
 
         function displayResult(isStress, page) {
