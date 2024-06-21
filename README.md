@@ -142,11 +142,11 @@
 
             var messageDiv = document.getElementById('message1');
             if (factorCount >= 2) {
-                messageDiv.innerHTML = "Hay factores de riesgo por estrés-shock térmico. Por favor, ponte en contacto con tus delegados y sigue Respondiendo.";
+                messageDiv.innerHTML = "Hay factores de riesgo por estrés-shock térmico. Por favor, ponte en contacto con tus delegados/as y sigue Respondiendo.";
                 messageDiv.style.display = "block";
                 setTimeout(() => {
                     showPage2();
-                }, 5000);
+                }, 6000);
             } else {
                 displayResult(false, 1);
             }
