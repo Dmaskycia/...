@@ -145,7 +145,7 @@
 
             var messageDiv = document.getElementById('message1');
             if (factorCount >= 2) {
-                messageDiv.innerHTML = "Hay factores de riesgo por estrés-shock térmico. Por favor, ponte en contacto con tus delegados/as y sigue Respondiendo.";
+                messageDiv.innerHTML = "Hay factores de riesgo por estrés-shock térmico. Por favor, ponte en contacto con tus delegados/as y continua...";
                 messageDiv.style.display = "block";
                 setTimeout(() => {
                     showPage2();
@@ -192,7 +192,7 @@
             var resultDiv = document.getElementById('result' + page);
             if (isStress) {
                 resultDiv.innerHTML = `
-                    <strong>Alerta:</strong> Hay indicios de shock térmico en tu lugar de trabajo, IMPORTANTE SEGUIR LAS INSTRUCCIONES<br><br>
+                    <strong>Alerta:</strong> Hay indicios de shock térmico en tu lugar de trabajo, IMPORTANTE SEGUIR LAS INSTRUCCIONES <br><br>
                     <strong>Instrucciones:</strong>
                     <ol>
                         <li>Avisar al 112 y servicios sanitarios.</li>
