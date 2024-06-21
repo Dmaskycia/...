@@ -85,7 +85,7 @@
     </div>
 
     <div id="page2" class="content" style="display: none;">
-        <h1>Encuesta de Síntomas de Estrés Térmico</h1>
+        <h1>Encuesta de Síntomas de Shock Térmico</h1>
         <form id="surveyForm2">
             <label for="dizziness">¿Sientes mareos o vértigo frecuentemente en el trabajo?</label><br>
             <input type="radio" id="dizzinessYes" name="dizziness" value="sí">
