@@ -145,7 +145,7 @@
 
             var messageDiv = document.getElementById('message1');
             if (factorCount >= 2) {
-                messageDiv.innerHTML = "Hay factores de riesgo por estrés-shock térmico. Ponte en contacto con tus delegados/as y continua...";
+                messageDiv.innerHTML = "Hay factores de riesgo por estrés térmico. Ponte en contacto con tus delegados/as y continua...";
                 messageDiv.style.display = "block";
                 setTimeout(() => {
                     showPage2();
