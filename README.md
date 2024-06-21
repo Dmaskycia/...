@@ -172,7 +172,7 @@
                 messageDiv.style.display = "block";
                 setTimeout(() => {
                     showInstructions();
-                }, 5000);
+                }, 3000);
             } else {
                 displayResult(false, 2);
             }
