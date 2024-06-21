@@ -172,7 +172,7 @@
 
             var messageDiv = document.getElementById('message2');
             if (symptomCount >= 2) {
-                messageDiv.innerHTML = "Alerta: Hay indicios de estrés-shock térmico en tu lugar de trabajo, ❗️IMPORTANTE SEGUIR LAS INSTRUCCIONES❗️...";
+                messageDiv.innerHTML = "Alerta: Hay indicios de shock térmico en tu lugar de trabajo, ❗️IMPORTANTE SEGUIR LAS INSTRUCCIONES❗️...";
                 messageDiv.style.display = "block";
                 setTimeout(() => {
                     showInstructions();
