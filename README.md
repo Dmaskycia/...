@@ -208,7 +208,7 @@
                 resultDiv.style.borderColor = "#f5c6cb";
                 document.getElementById('instructions').style.display = 'block';
             } else {
-                resultDiv.innerHTML = "<strong>Bien:</strong> No hay indicios de estrés térmico en tu lugar de trabajo.";
+                resultDiv.innerHTML = "<strong>Bien:</strong> No hay indicios de estrés-shock térmico en tu lugar de trabajo.";
                 resultDiv.style.backgroundColor = "#d4edda";
                 resultDiv.style.color = "#155724";
                 resultDiv.style.borderColor = "#c3e6cb";
