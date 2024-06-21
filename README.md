@@ -149,7 +149,7 @@
                 messageDiv.style.display = "block";
                 setTimeout(() => {
                     showPage2();
-                }, 6000);
+                }, 4500);
             } else {
                 displayResult(false, 1);
             }
