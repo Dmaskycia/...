@@ -192,7 +192,7 @@
             var resultDiv = document.getElementById('result' + page);
             if (isStress) {
                 resultDiv.innerHTML = `
-                    <strong>Alerta:</strong> Hay indicios de shock térmico en tu lugar de trabajo, ❗️IMPORTANTE SEGUIR LAS INSTRUCCIONES❗️<br><br>
+                    <strong>Alerta:</strong> Hay indicios de shock térmico en tu lugar de trabajo, IMPORTANTE SEGUIR LAS INSTRUCCIONES<br><br>
                     <strong>Instrucciones:</strong>
                     <ol>
                         <li>Avisar al 112 y servicios sanitarios.</li>
